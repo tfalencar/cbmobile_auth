@@ -1,0 +1,4 @@
+
+#authorizaiton request test:
+
+r = requests.post('http://127.0.0.1:8080/auth', headers={'content-type':'application/json'}, data=json.dumps({'username': 'thiago','password': 'password'}))

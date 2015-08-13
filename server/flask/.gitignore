@@ -1,0 +1,11 @@
+venv
+
+*.pyc
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
