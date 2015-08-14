@@ -33,7 +33,6 @@ app.bcrypt = Bcrypt(app)
 # initialize JWT authentication  ======================================
 @jwt.authentication_handler
 def authenticate(username, password):
-    #check if username already in use
     bucket = app.userBucket
     print '@authentication handler'
     user = []

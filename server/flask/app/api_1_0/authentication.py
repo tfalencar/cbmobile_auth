@@ -42,7 +42,7 @@ def register():
         print 'ERROR : ' + str(e.__doc__) + ' ' + str(e.message)
         raise InvalidUsage('Internal server error', status_code=500)
 
-    print "Username not used yet..create it in sync gateway."
+    print "Username not used yet..create it in database."
     try:
         counter = bucket.counter(current_app.config['USER_COUNTER']).value
         key = str(counter)
